@@ -3,131 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>福井大学編入生サークル</title>
+    <meta name="description" content="A complex HTML page example">
+    <title>Complex HTML Page</title>
     <style>
-        /* Reset CSS */
-        body, h1, h2, h3, p, ul, li {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-        header {
-            background-color: #007bff;
+        header, footer {
+            background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 1em;
             text-align: center;
         }
         nav {
-            background-color: #343a40;
-            padding: 10px;
-            text-align: center;
+            background-color: #444;
+            padding: 1em;
         }
-        nav a {
-            color: #fff;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
             text-decoration: none;
-            margin: 0 10px;
         }
         section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        article {
+            background-color: white;
             padding: 20px;
-            margin: 20px auto;
-            max-width: 1200px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 2;
+            margin-right: 20px;
         }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        aside {
+            background-color: white;
+            padding: 20px;
+            flex: 1;
         }
-        .card {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        form {
+            background-color: #eee;
+            padding: 20px;
         }
-        footer {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
         }
-        footer p {
-            margin: 5px 0;
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+        .gallery img {
+            width: 30%;
+            margin-right: 1.5%;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>福井大学編入生サークル</h1>
+        <h1>Complex HTML Page</h1>
+        <p>A Sample HTML Structure with Various Elements</p>
     </header>
+
     <nav>
-        <a href="#">ホーム</a>
-        <a href="#">製品</a>
-        <a href="#">サービス</a>
-        <a href="#">お問い合わせ</a>
-        <a href="#">会社概要</a>
-        <a href="#">ニュース</a>
-    </nav>
-    <section>
-        <h2>特徴</h2>
-        <p>当サイトの特徴を紹介します。</p>
-        <div class="grid-container">
-            <div class="card">
-                <h3>高品質な製品</h3>
-                <p>当社の製品は高品質で信頼性が高いです。</p>
-            </div>
-            <div class="card">
-                <h3>優れたサービス</h3>
-                <p>顧客満足度を第一に、優れたサービスを提供します。</p>
-            </div>
-            <div class="card">
-                <h3>迅速な対応</h3>
-                <p>お問い合わせやサポートに迅速に対応いたします。</p>
-            </div>
-            <div class="card">
-                <h3>安心の保証</h3>
-                <p>製品には充実の保証サービスが付いています。</p>
-            </div>
-            <div class="card">
-                <h3>環境にやさしい</h3>
-                <p>環境への配慮を大切にし、持続可能な製品を提供しています。</p>
-            </div>
-            <div class="card">
-                <h3>お得な特典</h3>
-                <p>会員登録すると特別な割引やキャンペーンに参加できます。</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>お知らせ</h2>
         <ul>
-            <li><strong>2024年4月28日:</strong> サンプルサイトを公開しました。</li>
-            <li><strong>2024年4月30日:</strong> 新製品の発売が決定しました。</li>
-            <li><strong>2024年5月5日:</strong> ゴールデンウィークセール開催中！</li>
-            <li><strong>2024年5月10日:</strong> サイトリニューアル予告：より使いやすくなります。</li>
-            <li><strong>2024年5月15日:</strong> 新しいブログ記事が投稿されました。</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-    </section>
+    </nav>
+
     <section>
-        <h2>お問い合わせフォーム</h2>
-        <form action="#" method="POST">
-            <label for="name">お名前:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">メールアドレス:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">メッセージ:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-            <button type="submit">送信</button>
-        </form>
+        <article>
+            <h2>Main Article</h2>
+            <p>This is the main content area. It includes text, images, and other media elements. Below is a table with some data:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>janesmith@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Embedded Video</h3>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Image Gallery</h3>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/150" alt="Sample Image 1">
+                <img src="https://via.placeholder.com/150" alt="Sample Image 2">
+                <img src="https://via.placeholder.com/150" alt="Sample Image 3">
+            </div>
+        </article>
+
+        <aside>
+            <h2>Sidebar Content</h2>
+            <p>This is a sidebar area where you can place additional content or advertisements.</p>
+
+            <h3>Contact Form</h3>
+            <form action="#" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </aside>
     </section>
+
     <footer>
-        <p>© 2024 包括的なサンプルサイト. All Rights Reserved.</p>
+        <p>&copy; 2024 Complex HTML Page. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
